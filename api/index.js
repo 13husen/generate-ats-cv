@@ -11,7 +11,7 @@ function generateCVStream(res) {
   res.setHeader("Content-Type", "application/pdf");
   res.setHeader(
     "Content-Disposition",
-    'attachment; filename="Senior_Fullstack_Developer_CV.pdf"'
+    'attachment; filename="Malik_Fullstack_Developer_CV_20052025.pdf"'
   );
 
   doc.pipe(res); // Langsung stream ke response
