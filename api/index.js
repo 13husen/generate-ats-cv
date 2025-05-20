@@ -2,6 +2,8 @@ const express = require("express");
 const PDFDocument = require("pdfkit");
 
 const app = express();
+const cors = require("cors");  // install dulu: npm install cors
+
 const port = 3000;
 
 function generateCVStream(res) {
@@ -275,6 +277,8 @@ function generateCVStream(res) {
 
   doc.end();
 }
+
+app.use(cors());
 
 app.get("/download-cv", (req, res) => {
   generateCVStream(res);
