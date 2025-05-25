@@ -2,7 +2,7 @@ const express = require("express");
 const PDFDocument = require("pdfkit");
 
 const app = express();
-const cors = require("cors");  // install dulu: npm install cors
+const cors = require("cors"); // install dulu: npm install cors
 
 const port = 3000;
 
@@ -225,6 +225,17 @@ function generateCVStream(res) {
   );
 
   addExperience(
+    "Fullstack Developer / Low Code Developer",
+    "PT Bank Mandiri",
+    "Dec 2021 - Dec 2022",
+    [
+      "Completed various tasks and projects",
+      "Demonstrating proficiency in web development using Outsystems",
+      "Successfully utilizing Java Springboot for creating backend microservices",
+    ]
+  );
+
+  addExperience(
     "Fullstack Developer",
     "PT. Tema Data Rekayasa Digital",
     "Jul 2020 - Dec 2021",
@@ -288,5 +299,4 @@ app.listen(port, () => {
   console.log(`🚀 Server running on http://localhost:${port}`);
 });
 
-
-module.exports = app;  
+module.exports = app;
