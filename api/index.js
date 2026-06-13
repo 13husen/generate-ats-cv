@@ -13,7 +13,7 @@ function generateCVStream(res) {
   res.setHeader("Content-Type", "application/pdf");
   res.setHeader(
     "Content-Disposition",
-    'attachment; filename="Malik_Fullstack_Developer_CV_20052025.pdf"'
+    'attachment; filename="Malik_Fullstack_Developer_CV_20052025.pdf"',
   );
 
   doc.pipe(res); // Langsung stream ke response
@@ -156,114 +156,113 @@ function generateCVStream(res) {
 
   addHeader("Summary");
   addParagraph(
-    `Results-driven Fullstack Developer with over 7 years of experience in designing, developing, and maintaining scalable web applications. Proficient in both frontend and backend technologies, with a passion for clean code and agile methodologies. Strong experience with Java, Springboot, JavaScript, TypeScript, PHP, Laravel, React, Angular, Node.js, and cloud infrastructure (AWS, GCP).`
+    `Results-driven Fullstack Developer with over 8 years of experience in designing, developing, and maintaining scalable web applications. Proficient in both frontend and backend technologies, with a passion for clean code and agile methodologies. Strong experience with Java, Springboot, JavaScript, TypeScript, PHP, Laravel, React, Angular, Node.js, and cloud infrastructure (AWS, GCP).`,
   );
 
   addHeader("Technical Skills");
   addBulletList([
-    "Languages: Java (Android, Servlet), Springboot, JavaFX, Quarkus , Python, NodeJS, PHP (Laravel, YII, CI), " +
-      "React, Next.js, Angular, Vue 3, Flutter",
-    "Low codes : Outsystems",
-    "UI Frameworks:  Bootstrap, Materialize, Tailwind, Vuetify, Chakra UI, PrimeUI, Material UI",
-    "Tools: Docker, Kubernetes, Git, Jenkins, Webpack",
-    "Cloud: AWS (EC2, S3, Lambda, Amplify), GCP, GCS",
-    "Databases: PostgreSQL, MongoDB, MySQL, Redis",
-    "Testing: Jest, JUnit, Mockito",
-    "Methodologies: Agile, Scrum, TDD, CI/CD",
-    "AI : OpenAI (Completion & Whisper API)",
+    "Backend: Java (8/11/17/21), Spring Boot, Quarkus, Java Servlet, Apache Ant, Node.js, PHP (Laravel 8-12, Lumen, CodeIgniter 3 & 4, SlimPHP), Python",
+    "Frontend: JavaScript (ES6+), TypeScript, React.js, Next.js, Angular, Vue.js, Nuxt.js, Ionic, jQuery, HTML5, CSS3, Sass, Blade",
+    "Mobile & Low-Code: Android Studio (Java) and kotlin, Xcode, Flutter, OutSystems, Framer",
+    "UI Frameworks: Tailwind CSS, Bootstrap, Materialize, Vuetify, Chakra UI, PrimeReact, PrimeNG, Material UI",
+    "Databases: PostgreSQL, MySQL, SQL Server, MongoDB, Redis, SQLite, Couchbase (N1QL), PocketBase",
+    "Cloud & Infrastructure: AWS (S3, Amplify, Lambda), Google Cloud Platform (GCP), Google Cloud Storage (GCS), Google Kubernetes Engine (GKE), DigitalOcean, Vercel, Heroku",
+    "DevOps, Automations & Tools: Docker, Kubernetes, Jenkins, Git, GitHub, Bitbucket, Gitea, HashiCorp Vault, Postman, DBeaver, MongoDB Atlas, cPanel, n8n",
+    "Authentication & Security: OAuth 2.0, JWT, Google OAuth, Discord OAuth, LinkedIn OAuth, Keycloak",
+    "Integrations: OpenAI API, Whisper API, Telegram Bot, Firebase Cloud Messaging (FCM), Twilio, Infobip, RajaSMS, Zenziva",
+    "Payment Gateway: iPaymu, T-Money, Billfazz, Xenopay, Tranglo",
+    "Blockchain & Web3: Web3.js, Web3 Onboard",
+    "Testing: Jest, PHPUnit, JUnit, Mockito",
+    "Methodologies: Agile, Scrum, CI/CD, Microservices Architecture",
   ]);
 
   addHeader("Professional Experience");
   addExperience(
     "Fullstack Developer",
     "PT Bank Digital BCA",
-    "Jan 2025 - Present",
+    "Jan 2024 - Present",
     [
-      "Successfully completed given tasks as a full-stack developer for PT Bank Digital BCA.",
-      "utilizing AngularJS with Typescript for the frontend and Java Spring for the backend",
-    ]
+      "Developed and maintained multiple enterprise applications using Angular 17, TypeScript, Java Spring Boot, and PostgreSQL",
+      "Enhanced backend performance by implementing multithreaded processing and bulk operations capable of handling over 1 million records",
+      "Integrated external APIs and automated batch processing jobs using Shell Script and Apache Ant",
+      "Managed CI/CD pipelines and application deployments using Jenkins",
+      "Created and maintained microservices and backend services for scalable enterprise systems",
+      "Delivered bug fixes, UI enhancements, and API improvements across multiple projects",
+    ],
   );
 
   addExperience(
     "Fullstack Developer",
-    "PT Prudential Life Assurance",
+    "Prudential Life Assurance (Prudential Indonesia)",
     "Dec 2022 - Dec 2024",
     [
-      "Developed full-stack applications using AngularJS (Typescript) and Java Spring/Quarkus",
-      "Collaborated with teams to deliver reliable and high-quality software",
-      "Maintained clean, efficient code following best practices",
-      "Maintained hundreds of microservices, including bugfix, enhance and create new feature",
-      "Performed testing and debugging to ensure smooth user experience",
-      "Contributed to code reviews and documentation for better team collaboration",
-      "Followed agile methodologies to meet project deadlines consistently",
-    ]
+      "Developed enterprise applications using Angular, TypeScript, Spring Boot, Quarkus, and PostgreSQL",
+      "Delivered high-quality software solutions in collaboration with cross-functional teams",
+      "Maintained clean, efficient, and reliable code following software engineering best practices",
+      "Performed testing, debugging, and code reviews to improve system stability and maintainability",
+      "Managed project deliverables using Agile methodologies and contributed to technical documentation",
+      "Worked with Google Cloud Platform, Google Cloud Storage, and Couchbase databases",
+    ],
   );
 
   addExperience(
-    "Fullstack Developer (Freelance)",
+    "Freelance Fullstack Developer",
     "PT Diawan Dinamika Digital",
-    "Jun 2024 - Nov 2024",
+    "Jun 2024 - Present",
     [
-      "Delivered projects like pixlo.id and karir.diawan.id using various tech stacks",
-      "Built scalable full-stack applications with diverse frameworks and libraries",
-      "Adapted quickly to new tools and trends in full-stack development",
-    ]
+      "Delivered multiple projects including Pixlo.id, Karir.diawan.id, Efoplay, and Asthara CRM",
+      "Built scalable web applications using Next.js, React, Laravel, CodeIgniter, TypeScript, and Tailwind CSS",
+      "Integrated OpenAI and Whisper APIs for AI-powered interview and automation features",
+      "Implemented authentication and identity management using Keycloak",
+      "Containerized and deployed applications using Docker",
+      "Adapted quickly across different business domains, architectures, and technology stacks",
+    ],
   );
 
   addExperience(
     "Fullstack Developer",
-    "Kryst Digital Pte. Ltd",
+    "Kryst Digital Pte. Ltd (Remote)",
     "Sep 2022 - Sep 2023",
     [
-      "Developed dApps using Typescript, Next.js, Node.js, NestJS, and MongoDB",
-      "Integrated systems with Telegram Bot, GitHub, and third-party plugins",
-      "Built responsive UIs with Tailwind CSS for optimal user experience",
-      "Collaborated across teams to ensure smooth frontend-backend integration",
-      "Contributed to code reviews and maintained clear documentation",
-      "Solved technical issues quickly to support smooth project delivery",
-    ]
-  );
-
-  addExperience(
-    "Fullstack Developer / Low Code Developer",
-    "PT Bank Mandiri",
-    "Dec 2021 - Dec 2022",
-    [
-      "Completed various tasks and projects",
-      "Demonstrating proficiency in web development using Outsystems",
-      "Successfully utilizing Java Springboot for creating backend microservices",
-    ]
+      "Developed Web3 applications and dApps using Next.js, Node.js, NestJS, TypeScript, and MongoDB",
+      "Integrated Telegram Bot, GitHub, OAuth providers, and third-party services",
+      "Built responsive user interfaces using Tailwind CSS",
+      "Collaborated with frontend and backend teams to deliver scalable blockchain-based applications",
+      "Maintained documentation, code quality standards, and development best practices",
+    ],
   );
 
   addExperience(
     "Fullstack Developer",
-    "PT. Tema Data Rekayasa Digital",
+    "PT Tema Data Rekayasa Digital",
     "Jul 2020 - Dec 2021",
     [
-      "Developed Android and web apps using TypeScript, Vue, Nuxt, and Flutter/Java",
-      "Built clean, efficient APIs and responsive frontends with PHP Laravel / Lumen ",
-      "Ensured feature integration through close team collaboration",
-      "Contributed to code reviews and maintained project documentation",
-      "Kept up with new tech trends to improve development practices",
-    ]
+      "Developed Android and web applications using Laravel, Lumen, Vue.js, Nuxt.js, Flutter, and Java",
+      "Designed and maintained backend APIs and responsive frontend applications",
+      "Collaborated with cross-functional teams to ensure successful feature delivery",
+      "Performed code reviews and maintained technical documentation",
+      "Worked with OAuth2, JWT authentication, automated testing, and Tencent Cloud services",
+    ],
   );
 
   addExperience(
-    "Backend Developer",
-    " PT. Sandika Cahya Mandiri ( liteBIG )",
+    "Backend Lead",
+    "PT Sandika Cahya Mandiri (liteBIG)",
     "Jul 2017 - Jun 2020",
     [
-      "Transitioned from Web to Android Developer, demonstrating adaptability across platforms",
-      "Led backend API integration using CodeIgniter and Java Servlet (Tomcat) with MySQL and Redis",
-      "Integrated payment gateways (T-Money, Ipaymu, Billfazz) and messaging APIs (Infobip, RajaSMS, Zenziva)",
-      "Developed chat apps with Ejabberd and managed app deployment to Google Play & App Store",
-      "Collaborated across teams and contributed ideas to improve workflows and innovation",
-    ]
+      "Promoted from Web Developer to Android Developer and later Backend Lead",
+      "Led API integration and backend architecture initiatives using CodeIgniter and Java Servlet",
+      "Integrated payment gateways including T-Money, iPaymu, and Billfazz",
+      "Integrated OTP and messaging services using Infobip, RajaSMS, and Zenziva",
+      "Developed real-time messaging systems using Ejabberd",
+      "Managed Android and iOS application releases to Google Play Store and Apple App Store",
+      "Coordinated cross-functional teams and drove technical improvements across projects",
+    ],
   );
 
   addHeader("Education");
   addParagraph(
-    "Bachelor of Information Technology | Indraprasta PGRI University, South Jakarta | 2018 - 2022"
+    "Bachelor of Information Technology | Indraprasta PGRI University, South Jakarta | 2018 - 2022",
   );
 
   addHeader("Certifications");
