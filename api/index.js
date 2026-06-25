@@ -219,7 +219,7 @@ function generateCVStream(res) {
   addExperience(
     "Freelance Fullstack Developer",
     "PT Diawan Dinamika Digital",
-    "Jun 2024 - Present",
+    "Jun 2024 - Jun 2026",
     [
       "Delivered multiple projects including Pixlo.id, Karir.diawan.id, Efoplay, and Asthara CRM",
       "Built scalable web applications using Next.js, React, Laravel, CodeIgniter, TypeScript, and Tailwind CSS",
