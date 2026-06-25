@@ -13,7 +13,7 @@ function generateCVStream(res) {
   res.setHeader("Content-Type", "application/pdf");
   res.setHeader(
     "Content-Disposition",
-    'attachment; filename="Malik_Fullstack_Developer_CV_20052025.pdf"',
+    'attachment; filename="Malik_Fullstack_Developer_CV_25062026.pdf"',
   );
 
   doc.pipe(res); // Langsung stream ke response
@@ -94,7 +94,18 @@ function generateCVStream(res) {
     });
 
     y = doc.y + 4;
+    doc
+      .fillColor("black")
+      .text("Website: ", baseX + indent, y, { continued: true });
 
+    doc.fillColor("blue").text("malik-latest-cv.vercel.app", {
+      link: "https://malik-latest-cv.vercel.app/",
+      underline: true,
+      continued: false,
+    });
+
+    y = doc.y + 4;
+    
     doc
       .fillColor("black")
       .text("Location: Jakarta, Indonesia", baseX + indent, y);
